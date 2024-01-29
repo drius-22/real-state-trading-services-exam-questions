@@ -144,15 +144,14 @@ if __name__ == "__main__":
         # Create a CSV writer object
         csv_writer = csv.writer(file)
 
-
+        # for number in range(0, 500): 
         for number in range(500, 1000):
-
             question_number = number+1
             print (f"Question {question_number}")
 
             question = questions_data[number]
             questions_answers = question['answers']
-            question_str = f"Question {question_number}: {question['question']} \n(1){questions_answers[0]} \n(2){questions_answers[1]} \n(3){questions_answers[0]} \n(4){questions_answers[3]}"
+            question_str = f"Question {question_number}: {question['question']} \n(1){questions_answers[0]} \n(2){questions_answers[1]} \n(3){questions_answers[2]} \n(4){questions_answers[3]}"
 
             answer = answers_data[number]
             answer_str = f"Answer: {answer['answer_number']} Explanation: {answer['explanation']}"
